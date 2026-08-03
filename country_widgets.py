@@ -66,7 +66,7 @@ class CountryTile(tk.Frame):
         self.unavailable = False
         
         self.team_info = team
-        #print(team)
+       
         img = Image.open(team["image"]).resize((width, height))
         
         self.color_img = ImageTk.PhotoImage(img)
@@ -180,7 +180,6 @@ class Draw:
         self.confirm_button = tk.Button(root, text="Confirm", 
                                         activebackground="#2E7D32", activeforeground="#FFFFFF",
                                         state=tk.DISABLED, command=self.remove_teams_pot)
-        #self.confirm_button.bind("<Button-1>", lambda e, t=self.confirm_button : self.remove_teams_pot())
         self.default_but_bg = self.confirm_button.cget("bg")
         self.default_but_fg = self.confirm_button.cget("fg")
         self.confirm_button.place(relx=1.0, rely=1.0, anchor="se")
@@ -229,8 +228,7 @@ class Draw:
         self.confirm_button.place(relx=1.0, rely=1.0, anchor="se")
         
     def update_button(self):
-        # len(group.teams) == self.teams_in_group           IS THE CORRECT ONE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        are_groups_filled = all([(len(group.teams) == self.teams_in_group ) for group in self.groups])
+        are_groups_filled = all([(len(group.teams) == self.teams_in_group) for group in self.groups])
         state = tk.DISABLED if (not are_groups_filled) else tk.ACTIVE
         bg, fg = (self.default_but_bg, self.default_but_fg) if (not are_groups_filled) else ("#4CAF50", "#FFFFFF")
         self.confirm_button.config(bg=bg, fg=fg, state=state)
@@ -245,9 +243,7 @@ class Draw:
         self.country_selected.toggle()
         
     def remove_team(self, group_num, country):
-        #print(self.country_names[group_num])
         self.country_names[group_num].remove(country)
-        #print(self.country_names[group_num])
         self.update_button()
         
     def group_click(self, group):
@@ -279,10 +275,7 @@ class Simulator:
         self.rest_to_qualify = 32 - (self.groups_rows * self.groups_columns * self.automatic_qual)
     
     def destroy_all(self):
-        #print(len(self.groups), self.groups)
-        #for i in range(len(self.groups)):
         for i, group in enumerate(self.groups):
-            #print(i)
             group.destroy()
             for j, team in enumerate(group.teams):
                 team.destroy()
