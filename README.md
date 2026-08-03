@@ -22,6 +22,8 @@ The project is organised into 9 files:
 - **connect_dict.py**: connects the two dicts (teams and teams2). The reason i needed two dicts is because there was a per minute and daily limit for the requests at api-football.com . One dict was being updatied daily while the other containing data extracted from sites with no daily limit remained untouched.
 - **country_widgets.py**: The largest of the 9 files. It contains classes important for the organisation and function of the app. **CountryTileInGroup** represents the country when assigned to a group. CountryTile are the frames on the bottom of the start screen (all the available countries for the user to select from). **GroupBox** is meant to represent the groups, holding a list of teams. **Draw** is responsible for the draw procedure, while **Simulator** calculates the standings based on the groups generated from the *Draw* object. **App** organises all the above objects and ensures the smooth operation of the app.
 
+The group frames can be seen at the top of the screen, the available teams at the bottom. Each country is depicted with its flag along with the three letter FIFA code (extracted from the FIFA website).
+
 <div align="center">
 
   <p align="center">
@@ -32,6 +34,7 @@ The project is organised into 9 files:
 
 </div>
 
+When the user selects a team it turns grayscale to help the user unserstand/remember their selection, as seen in *Figure 2* (Germany).
 
 <div align="center">
 
@@ -43,6 +46,7 @@ The project is organised into 9 files:
 
 </div>
 
+When the user assigns a team/ country to a group, a new widget is created (the packing happens on the x axis, to better reflect real life group standings UIs provided by FIFA), while the old one is set inactive (*Figure 3*). If the user attempts to click on it nothing happens (they can not assign a team twice). If the user realises they made a mistake, they can just click on the team on the group, which removes the team from it, and the original widget is reset to active.
 
 <div align="center">
 
@@ -54,6 +58,7 @@ The project is organised into 9 files:
 
 </div>
 
+If all groups are filled with the maximum number of teams each group can host, then the *Confirm* button becomes active and is recolored as green, to help the user understand that they can now move on (*Figure 4*).
 
 <div align="center">
 
@@ -65,6 +70,7 @@ The project is organised into 9 files:
 
 </div>
 
+After clicking on the button the new frames are created with new text labels added to hold the points information for each team in the group (*Figure 5*).
 
 <div align="center">
 
@@ -76,6 +82,7 @@ The project is organised into 9 files:
 
 </div>
 
+User must click the *Enter* button on his keyboard to trigger the calculation of the standings in the R32 (Round of 32 - *Figure 6*). The automated qualified teams are colored with dark green. FIFA introduced a rule where the best 8 teams that finished 3rd on their group would also advance to the next round (R16). These teams are colored with light green. To calculate them I first created a list of all the teams that finished 3rd and then sorted them using a list of tuples. The first part of the tuple was each team's points and the second their final caluclated power. This manages to overcome any difficulties occuring from equal number of points, so the selection doesn't feel random.  
 
 <div align="center">
 
@@ -87,6 +94,7 @@ The project is organised into 9 files:
 
 </div>
 
+Now the user must choose again the group for each of the 32 qualified teams (*Figure 7*).
 
 <div align="center">
 
@@ -98,6 +106,7 @@ The project is organised into 9 files:
 
 </div>
 
+When all groups become full the *Confirm* button becomes active again (green - *Figure 8*).
 
 <div align="center">
 
@@ -109,6 +118,7 @@ The project is organised into 9 files:
 
 </div>
 
+After clicking on the button, the knockout frames are created. It was created based on how FIFA depicts the draws and paths to the final (*Figure 9*).
 
 <div align="center">
 
@@ -120,6 +130,7 @@ The project is organised into 9 files:
 
 </div>
 
+*Figure 10*-*Figure 13* the user generates the next round by clicking on the keyboard's *Enter*. The loosing team is recolored using grayscale to help users keep track of the qualified teams (their flags have colors).
 
 <div align="center">
 
@@ -164,6 +175,7 @@ The project is organised into 9 files:
 
 </div>
 
+After clicking *Enter* one last time the champion is decided and colored with a gold-like color.
 
 <div align="center">
 
