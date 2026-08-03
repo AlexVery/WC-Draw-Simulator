@@ -34,9 +34,8 @@ def parse_fifa_rankings(data):
 def download_flags(teams_database, headers):
     
     folder = Path("flags")
-    #if folder.exists: return
+    if folder.exists: return
     folder.mkdir()
-    #folder.mkdir(exist_ok=True)
     
     for team, data in teams_database.items():
         
@@ -156,10 +155,8 @@ def get_team_database():
         teams = load_pickle(filename)
         teams2 = load_pickle(filename2)
         add_to_dict(teams, teams2, ["form", "stats"])
-        #get_team_id(teams)                        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        #get_teams_form(teams)
         add_normalised_data(teams2)
-        save_pickle(filename, teams) #             !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        save_pickle(filename, teams)
         
     return teams2
 
