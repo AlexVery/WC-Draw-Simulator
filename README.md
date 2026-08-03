@@ -21,3 +21,156 @@ The project is organised into 9 files:
 - **fetch_national_team_data.py**: creates the teams object (acting as a dataset for our app, implemented as a dict, with the country names acting as keys for it).
 - **connect_dict.py**: connects the two dicts (teams and teams2). The reason i needed two dicts is because there was a per minute and daily limit for the requests at api-football.com . One dict was being updatied daily while the other containing data extracted from sites with no daily limit remained untouched.
 - **country_widgets.py**: The largest of the 9 files. It contains classes important for the organisation and function of the app. **CountryTileInGroup** represents the country when assigned to a group. CountryTile are the frames on the bottom of the start screen (all the available countries for the user to select from). **GroupBox** is meant to represent the groups, holding a list of teams. **Draw** is responsible for the draw procedure, while **Simulator** calculates the standings based on the groups generated from the *Draw* object. **App** organises all the above objects and ensures the smooth operation of the app.
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/7b873cfa-a3e2-4e60-9f61-2747acf05ca0" />
+  </p>
+
+  **Figure 1**: App main screen
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/c92bafdd-22e5-4214-af66-72cff286e095" />
+  </p>
+
+  **Figure 2**: User selected a team
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/f4fa0d1e-1b18-47d4-8a4a-73ab41523310" />
+  </p>
+
+  **Figure 3**: Team asssigned to a group
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/5b9dacb8-6914-4065-81ba-117d33ead62b" />
+  </p>
+
+  **Figure 4**: *Confirm* button becomes available after all groups become full
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/482571cc-2026-4349-982b-b29d21ee64cc" />
+  </p>
+
+  **Figure 5**: Round of 32 frames
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/dd7d49a5-dd68-49f4-b7cf-f5ff6ccbda43" />
+  </p>
+
+  **Figure 6**: Calculated standings, qualified teams depicted using green
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/f9f1a1a5-68c6-4131-9210-25c168ee7e5e" />
+  </p>
+
+  **Figure 7**: Draw for round of 16
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/e0f299b0-6d9e-4f7c-9cd6-1df8493f4d88" />
+  </p>
+
+  **Figure 8**: *Confirm* button becomes available
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/514d3c23-d37c-467f-8464-4090b590210a" />
+  </p>
+
+  **Figure 9**: Created knockout frames
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/154ccf45-3d9b-47cb-9e20-02b29567055b" />
+  </p>
+
+  **Figure 10**: Generated round of 16
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/1f70f861-f736-41b8-96f7-13dd127b939b" />
+  </p>
+
+  **Figure 11**: Generated Quarterfinals
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/7ed3e074-e498-4988-adf8-3be015710bda" />
+  </p>
+
+  **Figure 12**: Generated Semifinals
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/04ced2f5-8eb1-42ac-8a02-d016ca50b810" />
+  </p>
+
+  **Figure 13**: Generated Final
+
+</div>
+
+
+<div align="center">
+
+  <p align="center">
+    <img width="960" height="514" alt="Image" src="https://github.com/user-attachments/assets/91d113c1-8a9e-42ed-b1a9-e5462935137a" />
+  </p>
+
+  **Figure 14**: Crowned Champion!
+
+</div>
