@@ -1,0 +1,182 @@
+FIFA_TO_ELO = {
+    "American Samoa": "Eastern Samoa",
+    "Cabo Verde": "Cape Verde",
+    "China PR": "China",
+    "Chinese Taipei": "Taiwan",
+    "Congo DR": "DR Congo",
+    "Côte d'Ivoire": "Ivory Coast",
+    "DPR Korea": "North Korea",
+    "IR Iran": "Iran",
+    "Korea Republic": "South Korea",
+    "Kyrgyz Republic": "Kyrgyzstan",
+    "Macau": "Macao",
+    "Republic of Ireland": "Ireland",
+    "St. Kitts and Nevis": "Saint Kitts and Nevis",
+    "St. Lucia": "Saint Lucia",
+    "St. Vincent / Grenadines": "Saint Vincent and the Grenadines",
+    "São Tomé and Príncipe": "Sao Tome and Principe",
+    "The Gambia": "Gambia",
+    "Timor-Leste": "East Timor",
+    "Türkiye": "Turkey",
+    "USA": "United States",
+}
+
+COUNTRIES_NOT_IN_API_FOOTBALL = {
+    "Bosnia and Herzegovina",
+    "North Macedonia"
+}
+
+NAME_TO_ELO = {
+    "IR Iran" : "Iran",
+    "Côte d'Ivoire" : "Ivory Coast",
+    "Korea Republic" : "South Korea",
+    "Republic of Ireland" : "Rep. Of Ireland",
+    "Bosnia and Herzegovina" : "Bosnia",
+    "Cabo Verde" : "Cape Verde Islands",
+    "North Macedonia" : "North-Macedonia",
+    "China PR" : "China",
+    "Kyrgyz Republic" : "Kyrgyzstan",
+    "The Gambia" : "Gambia",
+    "DPR Korea" : "North Korea"
+}
+
+ELO_TO_NAME = {value : key for (key, value) in NAME_TO_ELO.items()}
+
+ELO_DEFUNCT = {
+    "Aden": "YE",
+    "Austria-Hungary": None,
+    "Basutoland": None,
+    "Belgian Congo": None,
+    "Belorussia": None,
+    "Bohemia": None,
+    "Bohemia and Moravia": None,
+    "Bonaire": None,
+    "British Guiana": None,
+    "British Honduras": None,
+    "British India": None,
+    "Burma": None,
+    "Ceylon": None,
+    "Chagos Islands": None,
+    "Christmas Island": None,
+    "Cocos Islands": None,
+    "Commonwealth of Independent States": None,
+    "Congo-Brazzaville": None,
+    "Congo-Kinshasa": None,
+    "Congo-Leopoldville": None,
+    "Czechoslovakia": None,
+    "Dahomey": None,
+    "Dutch East Indies": None,
+    "East Germany": None,
+    "East Pakistan": None,
+    "FS Micronesia": None,
+    "Falkland Islands": None,
+    "French Congo": None,
+    "French Guiana": None,
+    "French Somaliland": None,
+    "French Sudan": None,
+    "French Togoland": None,
+    "Gold Coast": None,
+    "Great Britain": None,
+    "Greenland": None,
+    "Guadeloupe": None,
+    "Khmer Republic": None,
+    "Kiribati": None,
+    "Korea": None,
+    "Kurdistan": None,
+    "Malaya": None,
+    "Mali Federation": None,
+    "Marshall Islands": None,
+    "Martinique": None,
+    "Mayotte": None,
+    "Moldavia": None,
+    "Monaco": None,
+    "Netherlands Antilles": None,
+    "New Hebrides": None,
+    "Niue": None,
+    "North Vietnam": None,
+    "North Yemen": None,
+    "Northern Cyprus": None,
+    "Northern Mariana Islands": None,
+    "Northern Rhodesia": None,
+    "Nyasaland": None,
+    "Palau": None,
+    "Portuguese Guinea": None,
+    "Reunion": None,
+    "Rhodesia": None,
+    "Ruanda-Urundi": None,
+    "Saar": None,
+    "Saba": None,
+    "Saint Barthelemy": None,
+    "Saint Martin": None,
+    "Saint Pierre and Miquelon": None,
+    "Serbia and Montenegro": None,
+    "Sint Eustatius": None,
+    "Sint Maarten": None,
+    "Somaliland": None,
+    "South Vietnam": None,
+    "South Yemen": None,
+    "Southern Rhodesia": None,
+    "Soviet Union": None,
+    "Surinam": None,
+    "Swaziland": None,
+    "Tanganyika": None,
+    "Tibet": None,
+    "Tuvalu": None,
+    "Ubangi-Shari": None,
+    "United Arab Republic": None,
+    "United Kingdom": None,
+    "Upper Volta": None,
+    "Vatican": None,
+    "Wallis and Futuna": None,
+    "West Germany": None,
+    "Western Sahara": None,
+    "Western Samoa": None,
+    "Yugoslavia": None,
+    "Zaire": None,
+    "Zanzibar": None,
+}
+
+ELO_CODE_OVERRIDES = {
+    "Aden": "YE",
+    "South Yemen": "YE",
+    "North Yemen": "YE",
+
+    "East Germany": "DE",
+    "West Germany": "DE",
+
+    "Soviet Union": "RU",
+
+    "Yugoslavia": "RS",
+
+    "Serbia and Montenegro": "RS",
+
+    "Zaire": "CD",
+
+    "Upper Volta": "BF",
+
+    "Burma": "MM",
+
+    "Ceylon": "LK",
+
+    "Swaziland": "SZ",
+
+    "Tanganyika": "TZ",
+
+    "Belorussia": "BY",
+
+    "Dutch East Indies": "ID",
+
+    "British Honduras": "BZ",
+
+    "British Guiana": "GY",
+
+    "Gold Coast": "GH",
+
+    "Dahomey": "BJ",
+
+    "Nyasaland": "MW",
+
+    "Northern Rhodesia": "ZM",
+
+    "Southern Rhodesia": "ZW",
+}
