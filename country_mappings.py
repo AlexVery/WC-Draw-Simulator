@@ -140,40 +140,23 @@ ELO_CODE_OVERRIDES = {
     "Aden": "YE",
     "South Yemen": "YE",
     "North Yemen": "YE",
-
     "East Germany": "DE",
     "West Germany": "DE",
-
     "Soviet Union": "RU",
-
     "Yugoslavia": "RS",
-
     "Serbia and Montenegro": "RS",
-
     "Zaire": "CD",
-
     "Upper Volta": "BF",
-
     "Burma": "MM",
-
     "Ceylon": "LK",
-
     "Swaziland": "SZ",
-
     "Tanganyika": "TZ",
-
     "Belorussia": "BY",
-
     "Dutch East Indies": "ID",
-
     "British Honduras": "BZ",
-
     "British Guiana": "GY",
-
     "Gold Coast": "GH",
-
     "Dahomey": "BJ",
-
     "Nyasaland": "MW",
 
     "Northern Rhodesia": "ZM",
