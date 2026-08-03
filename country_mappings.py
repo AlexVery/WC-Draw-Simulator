@@ -158,8 +158,6 @@ ELO_CODE_OVERRIDES = {
     "Gold Coast": "GH",
     "Dahomey": "BJ",
     "Nyasaland": "MW",
-
     "Northern Rhodesia": "ZM",
-
     "Southern Rhodesia": "ZW",
 }
