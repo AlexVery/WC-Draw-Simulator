@@ -22,7 +22,7 @@ The project is organised into 9 files:
 - **connect_dict.py**: connects the two dicts (teams and teams2). The reason I needed two dicts is because there was a per minute and daily limit for the requests at api-football.com . One dict was being updated daily while the other containing data extracted from sites with no daily limit remained untouched.
 - **country_widgets.py**: The largest of the 9 files. It contains classes important for the organisation and function of the app. **CountryTileInGroup** represents the country when assigned to a group. **CountryTile** are the frames on the bottom of the start screen (all the available countries for the user to select from). **GroupBox** is meant to represent the groups, holding a list of teams. **Draw** is responsible for the draw procedure, while **Simulator** calculates the standings based on the groups generated from the *Draw* object. **App** organises all the above objects and ensures the smooth operation of the app.
 
-The group frames can be seen at the top of the screen, the available teams at the bottom. Each country is depicted with its flag along with the three letter FIFA code (extracted from the FIFA website).
+The group frames can be seen at the top of the screen, the available teams at the bottom. Each country is depicted with its flag along with the three letter FIFA code (extracted from the FIFA website - *Figure 1*).
 
 <div align="center">
 
