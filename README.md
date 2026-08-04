@@ -82,7 +82,7 @@ After clicking on the button the new frames are created with new text labels add
 
 </div>
 
-User must click the *Enter* button on his keyboard to trigger the calculation of the standings in the R32 (Round of 32 - *Figure 6*). The automated qualified teams are colored with dark green. FIFA introduced a rule where the best 8 teams that finished 3rd on their group would also advance to the next round (R16). These teams are colored with light green. To calculate them I first created a list of all the teams that finished 3rd and then sorted them using a list of tuples. The first part of the tuple was each team's points and the second their final caluclated power. This manages to overcome any difficulties occuring from equal number of points, so the selection doesn't feel random.  
+Users must click the *Enter* button on their keyboard to trigger the calculation of the standings in the R32 (Round of 32 - *Figure 6*). The automated qualified teams are colored with dark green. FIFA introduced a rule where the best 8 teams that finished 3rd on their group would also advance to the next round (R16). These teams are colored with light green. To calculate them I first created a list of all the teams that finished 3rd and then sorted them using a list of tuples. The first part of each tuple was each team's points and the second their final calculated power. This manages to overcome any difficulties occuring from equal number of points, so the selection doesn't feel random.  
 
 <div align="center">
 
