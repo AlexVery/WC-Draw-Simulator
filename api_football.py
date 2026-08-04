@@ -3,8 +3,8 @@ import requests
 import time
 
 headers = {
-    #'x-apisports-key': "XxXxXxXxXxXxXxXxXxXxXxXx"
-    'x-apisports-key':  "93b34f57ec32521f7d4429318bcefcb4"
+    # Change the key into your own, after you complete the registration at api football
+    'x-apisports-key':  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     }
 
 def get_team_id(teams):
