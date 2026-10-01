@@ -28,8 +28,18 @@ groups_rows = 2
 groups_columns = 6
 
 simulator = Simulator(groups_rows, groups_columns)
-app = App(root, main_frame, groups_frame, countries_frame, teams, simulator, [configure_layout, create_groups, create_country_tiles])
-draw = Draw(teams, 4, root, countries_frame, groups_frame, app.create_simulator_group_frames)
+app = App(
+    root,
+    main_frame,
+    groups_frame,
+    countries_frame,
+    teams,
+    simulator,
+    [configure_layout, create_groups, create_country_tiles],
+)
+draw = Draw(
+    teams, 4, root, countries_frame, groups_frame, app.create_simulator_group_frames
+)
 app.add_draw(draw)
 
 configure_layout(groups_frame, countries_frame, groups_rows, groups_columns)

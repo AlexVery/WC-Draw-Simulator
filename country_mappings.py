@@ -21,26 +21,23 @@ FIFA_TO_ELO = {
     "USA": "United States",
 }
 
-COUNTRIES_NOT_IN_API_FOOTBALL = {
-    "Bosnia and Herzegovina",
-    "North Macedonia"
-}
+COUNTRIES_NOT_IN_API_FOOTBALL = {"Bosnia and Herzegovina", "North Macedonia"}
 
 NAME_TO_ELO = {
-    "IR Iran" : "Iran",
-    "Côte d'Ivoire" : "Ivory Coast",
-    "Korea Republic" : "South Korea",
-    "Republic of Ireland" : "Rep. Of Ireland",
-    "Bosnia and Herzegovina" : "Bosnia",
-    "Cabo Verde" : "Cape Verde Islands",
-    "North Macedonia" : "North-Macedonia",
-    "China PR" : "China",
-    "Kyrgyz Republic" : "Kyrgyzstan",
-    "The Gambia" : "Gambia",
-    "DPR Korea" : "North Korea"
+    "IR Iran": "Iran",
+    "Côte d'Ivoire": "Ivory Coast",
+    "Korea Republic": "South Korea",
+    "Republic of Ireland": "Rep. Of Ireland",
+    "Bosnia and Herzegovina": "Bosnia",
+    "Cabo Verde": "Cape Verde Islands",
+    "North Macedonia": "North-Macedonia",
+    "China PR": "China",
+    "Kyrgyz Republic": "Kyrgyzstan",
+    "The Gambia": "Gambia",
+    "DPR Korea": "North Korea",
 }
 
-ELO_TO_NAME = {value : key for (key, value) in NAME_TO_ELO.items()}
+ELO_TO_NAME = {value: key for (key, value) in NAME_TO_ELO.items()}
 
 ELO_DEFUNCT = {
     "Aden": "YE",
